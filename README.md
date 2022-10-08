@@ -9,4 +9,4 @@ I will try to update the server-side scripts but here are some useful links in t
 
 1. ThingSpeak platform https://www.instructables.com/Installing-MQTT-BrokerMosquitto-on-Raspberry-Pi/
 2. Installation of the MQQT broker on the Raspberry Pi https://pimylifeup.com/raspberry-pi-mosquitto-mqtt-server/
-3. Node RED - I used this to develop the server-side scripts, it makes use of provides a browser-based flow editor that makes it easy to wire together flows using the wide range of nodes in the palette (that is how it's difficult to share the code). Flows can be then deployed to the runtime in a single-click. https://nodered.org/docs/getting-started/raspberrypi
+3. Node RED - I used this to develop the server-side scripts, it makes use of a browser-based flow editor that makes it easy to wire together flows using the wide range of nodes in the palette (that is how it's difficult to share the code). Flows can be then deployed to the runtime in a single-click. https://nodered.org/docs/getting-started/raspberrypi
