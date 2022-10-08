@@ -87,7 +87,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.println("-----------------------");
 }
 
-// Connect to MQQT server
+// Connect to MQTT server
 void jaribu_tena(){
   client.setServer(mqttServer, mqttPort);
   client.setCallback(callback);
@@ -105,7 +105,7 @@ void jaribu_tena(){
   }
   }
   
-  // Send temperature to MQQT server
+  // Send temperature to MQTT server
 void mod_temp(){
   t = dht.readTemperature();
   String temperatureString = String(t);
@@ -116,7 +116,7 @@ void mod_temp(){
   }
 
 
-// Send humidity to MQQT server
+// Send humidity to MQTT server
 void mod_humid(){
   h = dht.readHumidity();
   String humidityString = String(h);
@@ -126,7 +126,7 @@ void mod_humid(){
   client.publish("esp8266_h", humidity);
   }
 
-  // Send moisture to MQQT server
+  // Send moisture to MQTT server
 void mod_moisture(){
   soilV=analogRead(soil);
   soilA=(threshold-soilV);
